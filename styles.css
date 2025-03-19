@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-width: 500px; */
+  min-width: 500px;
 }
 
 header {
@@ -21,14 +21,14 @@ header {
 h1 {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
-  font-style: normal; 
-  color: #112A46;
+  font-style: normal;
+  color: #112a46;
   font-size: 48px;
 }
 
 .main-section {
-  /* min-width: 500px; */
   width: 80%;
+  margin-bottom: 30px;
 }
 
 .input-form {
@@ -48,7 +48,7 @@ h1 {
 
 .form-field label {
   font-size: 20px;
-  color: #112A46;
+  color: #112a46;
   font-family: "Lobster", sans-serif;
 }
 
@@ -125,26 +125,68 @@ input[type="date"],
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  color: #161616;
+}
+
+.gold {
+  background-color: #ffd700;
+}
+
+.purple {
+  background-color: #4f2c56bc;
+}
+
+.light-brown {
+  background-color: #c79d68;
+}
+
+.dark-brown {
+  background-color: #9a5050eb;
+}
+
+.green {
+  background-color: #56f498;
 }
 
 .red {
-  background-color: rgba(249, 153, 153, 0.7);
-  backdrop-filter: blur(10px);
+  background-color: #f99999;
+}
+
+.dark-red {
+  background-color: #fa2727de;
 }
 
 .yellow {
-  background-color: #fefe97;
-  backdrop-filter: blur(10px);
+  background-color: #fff049;
 }
 
-.dark-yellow {
-  background-color: #ffea00;
-  backdrop-filter: blur(10px);
+.orange {
+  background-color: #ffa600;
 }
 
 .turqoise {
   background-color: #40e0d0;
-  backdrop-filter: blur(10px);
+}
+
+.dark-grey {
+  background-color: #808080;
+}
+
+.grey {
+  background-color: #a9a9a9;
+}
+
+.rose-pink {
+  background-color: #ff3377;
+}
+
+.beige {
+  background-color: #c2a67f;
+}
+
+.blue {
+  background-color: #86c6ff;
 }
 
 .first-card-0 {
@@ -172,34 +214,33 @@ input[type="date"],
 .card-title {
   margin-top: 3px;
   width: 100%;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
 }
 
 .card-emoji {
   margin-top: 3px;
   width: 100%;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
 }
 
 .no-data-card {
-  background-color: #80808080;
-  backdrop-filter: blur(10px);
-  color: #fefefe;
+  background-color: #d6d6d6;
+  color: #404040;
 }
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 750px) and (max-width: 1024px) {
   .main-section {
     width: 90%;
   }
-  
+
   .input-form {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .main-section {
     width: 95%;
   }
@@ -216,5 +257,13 @@ input[type="date"],
 
   .day-header {
     font-size: 12px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .card-emoji {
+    font-size: 25px;
   }
 }
