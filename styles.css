@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f8ff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 500px; */
+}
+
+header {
+  padding: 36px;
+}
+
+h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  color: #112A46;
+  font-size: 48px;
+}
+
+.main-section {
+  /* min-width: 500px; */
+  width: 80%;
+}
+
+.input-form {
+  margin: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-field label {
+  font-size: 20px;
+  color: #112A46;
+  font-family: "Lobster", sans-serif;
+}
+
+input[type="date"],
+#mood {
+  min-width: 60px;
+  border: none;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+#submit {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(58, 132, 216);
+  color: #f0f8ff;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease-in-out 0.15s;
+}
+
+#submit:hover {
+  box-shadow: 0 0 5px rgba(58, 132, 216, 0.8);
+}
+
+#submit:active {
+  background-color: rgb(33, 74, 121);
+}
+
+.filters {
+  margin: 16px 32px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filters select {
+  min-width: 60px;
+  border: none;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.calendar-holder {
+  margin: 16px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day-header {
+  text-align: center;
+  background-color: rgb(252, 252, 203);
+  color: #1e4d82;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(90, 90, 90, 0.15);
+}
+
+.calendar-cards {
+  padding: 10px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.red {
+  background-color: rgba(249, 153, 153, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.yellow {
+  background-color: #fefe97;
+  backdrop-filter: blur(10px);
+}
+
+.dark-yellow {
+  background-color: #ffea00;
+  backdrop-filter: blur(10px);
+}
+
+.turqoise {
+  background-color: #40e0d0;
+  backdrop-filter: blur(10px);
+}
+
+.first-card-0 {
+  grid-column-start: 0;
+}
+.first-card-1 {
+  grid-column-start: 1;
+}
+.first-card-2 {
+  grid-column-start: 2;
+}
+.first-card-3 {
+  grid-column-start: 3;
+}
+.first-card-4 {
+  grid-column-start: 4;
+}
+.first-card-5 {
+  grid-column-start: 5;
+}
+.first-card-6 {
+  grid-column-start: 6;
+}
+
+.card-title {
+  margin-top: 3px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.card-emoji {
+  margin-top: 3px;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.no-data-card {
+  background-color: #80808080;
+  backdrop-filter: blur(10px);
+  color: #fefefe;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .main-section {
+    width: 90%;
+  }
+  
+  .input-form {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-section {
+    width: 95%;
+  }
+
+  .input-form {
+    flex-direction: column;
+  }
+
+  .calendar-holder {
+    margin: 16px 2px;
+    padding: 2px;
+    gap: 5px;
+  }
+
+  .day-header {
+    font-size: 12px;
+  }
+}
