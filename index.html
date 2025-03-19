@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mood Tracker</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <header>
-        <h1>Mood Tracker</h1>
+      <h1>Mood Tracker</h1>
     </header>
     <section class="main-section">
-        <div class="input-form">
-            <div class="form-field">
-                <label for="date">Date</label>
-                <input id="date" type="date">
-            </div>
-            <div class="form-field">
-                <label for="mood">Feeling</label>
-                <select name="feeling" id="mood">
-                    <option selected>Select</option>
-                </select>
-            </div>
-            <button id="submit">Submit</button>
+      <!-- Input-Section -->
+      <div class="input-form">
+        <div class="form-field">
+          <label for="date">Date</label>
+          <input id="date" type="date" />
         </div>
-        <div class="filters">
-            <select name="year" id="year-filter"></select>
-            <select name="month" id="month-filter"></select>
+        <div class="form-field">
+          <label for="mood">Feeling</label>
+          <select name="feeling" id="mood">
+            <option selected>Select</option>
+          </select>
         </div>
-        <div class="calendar-holder">
-        </div>
-			</section>
+        <button id="submit">Submit</button>
+      </div>
+
+      <!-- Filters-Section -->
+      <div class="filters">
+        <select name="year" id="year-filter"></select>
+        <select name="month" id="month-filter"></select>
+      </div>
+
+      <!-- Calendar-Display-Section -->
+      <div class="calendar-holder"></div>
+    </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
